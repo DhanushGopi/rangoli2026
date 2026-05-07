@@ -34,8 +34,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 3rem;
-    gap: 4rem;
+    padding: 1rem;
+    gap: 2rem;
 }
 
 /*Navbar Section*/
@@ -135,8 +135,8 @@ body{
 
 .herosec-title{
     font-family: var(--staatliches);
-    font-size: 8rem;
-    line-height: 7rem;
+    font-size: 7rem;
+    line-height: 6rem;
     color: var(--color1);
 }
 
@@ -192,7 +192,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     font-family: var(--staatliches);
-    font-size: 4rem;
+    font-size: 3rem;
     background-image: linear-gradient(
         135deg, 
         rgb(245, 210, 0) 0%, 
@@ -236,7 +236,7 @@ body{
  justify-content: center;
  align-items: center;
  flex-direction: column;
- gap: 3rem;
+ gap: 1rem;
 }
 
 
@@ -296,6 +296,71 @@ body{
 .rulescard:hover .rulescard-text{
     color: var(--color1);
 }
+
+
+/*Rules List Section*/
+
+.ruleslist-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.ruleslist{
+    width: 1080px;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    background-color: var(--color3);
+    transition: 0.5s;
+    border-radius: 1rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, padding 0.5s ease;
+}
+
+.ruleslist:hover{
+    background-image: radial-gradient(ellipse farthest-corner at 10% 25%, rgb(245, 210, 0) 0%, #FF77C8 25%, #B671FF 50%, #00D1FF 75%, rgb(0, 221, 143) 100%);
+    transform: translateY(-5px); 
+    padding: 0.2rem 0.2rem 0.5rem 0.2rem;
+}
+
+.ruleslist-content{
+    width: 1080px;
+    background-color: var(--white1);
+    border-radius: 0.8rem; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+    gap: 1rem;
+    /* background-color: var(--black1); */
+}
+
+
+.ruleslist-img{
+    width: 50px;
+    border-radius: 1rem;
+}
+
+.ruleslist-text{
+    font-family: var(--staatliches);
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color2);
+}
+
+.ruleslist:hover .ruleslist-text{
+    color: var(--color1);
+}
+
+
+
+
+
+
+
 
 
 /*Title Sponser Section*/
