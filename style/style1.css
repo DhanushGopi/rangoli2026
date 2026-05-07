@@ -29,12 +29,12 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 0rem 0rem 0rem;
     gap: 2rem;
 }
 
@@ -112,7 +112,7 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap:1.5rem;
+    gap:1rem;
 }
 
 .herosec-sponser{
@@ -150,13 +150,13 @@ body{
 
 
 .herosec-img{
-    width: 540px;
+    width: 450px;
 }
 
 .primary-btn{
     font-family: var(--archivo);
     font-size: 1.5rem;
-    padding: 1rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     background-color: var(--color1);
     color: var(--white1);
     border-radius: 10rem;
@@ -187,7 +187,7 @@ body{
 }
 
 .contsec-title{
-    width: 1080px;
+    width: 980px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -213,7 +213,7 @@ body{
 
 
 .prizesec-cont{
-    width: 1080px;
+    width: 980px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,11 +221,15 @@ body{
 }
 
 .prizesec-text{
-    width: 540px;
+    width: 440px;
     font-size: 1.5rem;
     color: var(--color2);
 }
 
+.prizesec-img{
+
+    width:500PX;
+}
 
 /*Rules Section*/
 
@@ -309,7 +313,7 @@ body{
 }
 
 .ruleslist{
-    width: 1080px;
+    width: 980px;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     background-color: var(--color3);
     transition: 0.5s;
@@ -386,15 +390,22 @@ transition: transform 0.5s ease-in-out;
 /*Footer Section*/
 
 .footer{
-    width: 70dvw;
-    padding: 2rem 5rem;
+    width: 100%;
+    /* padding: 3rem 9rem; */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     background-color: var(--color1);
     gap: 3rem;
-    border-radius: 2rem;
+}
+
+.footer-logo-cont{
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 0rem 0rem 0rem;
 }
 
 .footer-logo{
@@ -402,10 +413,11 @@ transition: transform 0.5s ease-in-out;
 }
 
 .footer-bottom{
-    width: 70dvw;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0rem 0rem 2rem 0rem;
 }
 
 .copyrights-text{
