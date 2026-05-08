@@ -47,8 +47,11 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: var(--color1);
-    border-radius: 10rem;
+    border-radius: 2rem;
     padding: 1rem 1.5rem 1rem 5rem;
+    position: sticky;
+    top:1rem;
+    outline:1rem solid var(--white1);
 }
 
 .nav-btns{
@@ -362,12 +365,6 @@ body{
 
 
 
-
-
-
-
-
-
 /*Title Sponser Section*/
 
 .titlesponsersec-cont{
@@ -427,4 +424,375 @@ transition: transform 0.5s ease-in-out;
 
 .footer-img{
     width: 100%;
+}
+
+
+.hidenav{
+    display: none;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:520px){
+
+
+
+
+.container{
+    padding:0.2rem 0rem 0rem 0rem;
+    gap: 2rem;
+}
+
+
+
+
+/*Mobile Navbar*/
+
+.mobnavbar{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color1);
+    border-radius: 0.2rem;
+    padding: 1rem;
+    position: sticky;
+    top:0.2rem;
+    outline:0.2rem solid var(--white1);
+}
+
+
+.mobnavbar-top{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobnavbar-logo{
+    padding: 1rem;
+}
+
+.menu-btns{
+    padding:1rem;
+}
+
+.mobnav-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.mobnav-btn{
+    padding: 0.5rem 1rem;
+    background-color: var(--color1);
+    border-radius: 5rem;
+    text-decoration: none;
+    font-family: var(--archivo);
+    font-weight: 500;
+    color: var(--white1);
+    transition: transform 0.5s ease;
+}
+
+.mobnav-btn:hover{
+    padding: 0.5rem 1rem;
+    background-color: var(--white1);
+    border-radius: 5rem;
+    text-decoration: none;
+    font-family: var(--archivo);
+    font-weight: 500;
+    color: var(--color1);
+    transform: translateY(-1px);
+    transition:  margin-bottom 0.5s ease-in-out; 
+    }
+ 
+
+
+
+.primary-bg{
+
+  background-image: radial-gradient(ellipse farthest-corner at 10% 25%, rgb(245, 210, 0) 0%, #FF77C8 25%, #B671FF 50%, #00D1FF 75%, rgb(0, 221, 143) 100%);
+  color: var(--white1);
+  text-shadow: -2px 2px 2px rgba(0,0,0,0.25);
+} 
+
+.primary-bg:hover{
+  color: var(--white1);
+  transition: 0.5s ease-in-out;
+  text-shadow: -2px 2px 2px rgba(0,0,0,0.5);
+}
+
+
+
+/*Navbar*/
+
+.navbar{
+    display: none;
+}
+
+/*Hero Section*/
+
+.herosec{
+    width: 90dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.herosec-content{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.herosec-sponser{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.herosec-title{
+    font-size: 5rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.herosec-subtext{
+    width: 300px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+.herosec-img{
+    width: 300px;
+}
+
+.primary-btn{
+    font-size: 1rem;
+} 
+
+/*Cont Section*/
+
+.contsec{
+    width: 90dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contsec-title{
+    width: 300px;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--staatliches);
+    background-image: linear-gradient(
+        135deg, 
+        rgb(245, 210, 0) 10%, 
+        #FF77C8 20%, 
+        #B671FF 40%, 
+        #00D1FF 60%, 
+        rgb(0, 221, 143) 100%
+    );
+    
+}
+
+
+/*Prize Section*/
+
+.prizesec-cont{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.prizesec-text{
+    width: 300px;
+    font-size: 1.3rem;
+    color: var(--color2);
+    text-align: justify;
+}
+
+.prizesec-img{
+
+    width:300px;
+}
+
+
+/*Title Sponser Section*/
+
+.titlesponsersec-cont{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.titlesponsersec-img{
+    width: 300px;
+}
+
+
+/*Rules Section*/
+
+
+
+.rulessec-cont{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap: 1rem;
+}
+
+
+/*Rules List Section*/
+
+.ruleslist-row{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.ruleslist{
+    width: 300px;
+}
+
+
+.ruleslist:hover{
+    background-image: radial-gradient(ellipse farthest-corner at 10% 25%, rgb(245, 210, 0) 0%, #FF77C8 25%, #B671FF 50%, #00D1FF 75%, rgb(0, 221, 143) 100%);
+    transform: translateY(-5px); 
+    padding: 0.2rem 0.2rem 1rem 0.2rem;
+}
+
+
+.ruleslist-content{
+    width: 300px;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0rem;
+    padding: 1rem;
+}
+
+
+.ruleslist-img{
+    width: 100px;
+    border-radius: 1rem;
+}
+
+.ruleslist-text{
+    font-size: 1.3rem;
+}
+
+
+/*Footer Section*/
+
+.footer{
+    width: 100%;
+    /* padding: 3rem 9rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color1);
+    gap: 2rem;
+}
+
+.footer-logo-cont{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 0rem 0rem 1.5rem;
+}
+
+.footer-logo{
+    width: 150px;
+}
+
+.footer-bottom{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 0rem;
+    gap: 1.5rem;
+}
+
+.footer-btns{
+    display: flex;
+    justify-content: flex-start;
+    align-items:  flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.copyrights-text{
+    width: 90%;
+    color: var(--white1);
+    padding: 0rem 1rem;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+
+/*Section Hider*/
+.navbar{
+    display:none;
+}
+
+/* .herosec{
+    display:none;
+} */
+
+
+/* .prizesec{
+    display:none;
+} */
+
+/* .titlesponsersec{
+    display:none;
+} */
+
+/* .rulessec{
+    display:none;
+} */
+
+
+/* .footer{
+    display:none;
+} */
+
+
+.hidesec{
+    display: none;
+}
+
 }
