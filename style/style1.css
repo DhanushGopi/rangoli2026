@@ -47,11 +47,12 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: var(--color1);
-    border-radius: 2rem;
+    border-radius: 5rem;
     padding: 1rem 1.5rem 1rem 5rem;
     position: sticky;
     top:1rem;
     outline:1rem solid var(--white1);
+    z-index: 1000;
 }
 
 .nav-btns{
@@ -449,22 +450,23 @@ transition: transform 0.5s ease-in-out;
 /*Mobile Navbar*/
 
 .mobnavbar{
-    width: 280px;
+    width: 88dvw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--color1);
     border-radius: 0.2rem;
-    padding: 1rem;
+    padding: 0rem 1rem;
     position: sticky;
     top:0.2rem;
     outline:0.2rem solid var(--white1);
+     z-index: 1000;
 }
 
 
 .mobnavbar-top{
-    width: 280px;
+    width: 88dvw;
     display: flex;
     justify-content: space-between;
     align-items: center;
