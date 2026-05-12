@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
     <title>Rangoli</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
 </head>
 <body>
 
@@ -61,6 +65,56 @@
                 <button class="primary-btn">Let's Participate!</button>
             </div>
             <img class="herosec-img" src="./assets/Rangoli Geometric.gif" alt="">
+        </div>
+
+
+        <!--Lets Color Section-->
+
+        <div class="contsec letscolorsec" id="letscolorsec">
+            <h3 class="contsec-title">Let's Color!</h3>
+                <section class="coloring-module" id="coloring-module">
+                    <label class="design-selection-label">Choose Your Kolam Design</label>
+                    <div class="design-selection">
+                        <div class="pictures-inner"> 
+                            <img class="design-preview design-preview1" src="https://images.assettype.com/dinamani-demo/2026-05-05/dxn3wbqj/rangolidesign1.svg" /> 
+                            <button data-src="https://images.assettype.com/dinamani-demo/2026-05-05/dxn3wbqj/rangolidesign1.svg" 
+                            class="primary-btn  loadImg">Load</button>
+                        </div> 
+                        <div class="pictures-inner"> 
+                            <img  class="design-preview design-preview2" src="https://images.assettype.com/dinamani-demo/2026-05-05/cfpp2mlq/rangolisample.svg" /> 
+                            <button data-src="https://images.assettype.com/dinamani-demo/2026-05-05/cfpp2mlq/rangolisample.svg" 
+                            class=" primary-btn loadImg">Load</button>
+                        </div> 
+                        <div class="pictures-inner">
+                            <img  class="design-preview design-preview3" src="https://images.assettype.com/dinamani-demo/2025-10-21/297j51zg/image1.svg" />
+                            <button data-src="https://images.assettype.com/dinamani-demo/2025-10-21/297j51zg/image1.svg"
+                                class="primary-btn loadImg">Load</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="main-container" id="main-container" style="display: none;">
+                            <div class="picture-container" id="picture-container" style="display: none;">
+                            </div>
+                        <div class="toolbar" id="toolbar" style="display: none;">
+                            <div class="color-code-container">
+                                <div class="color-code" data-color="#ffc300" style="background-color: #ffc300; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#38a169" style="background-color: #38a169; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#e74c3c" style="background-color: #e74c3c; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#3498db" style="background-color: #3498db; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#8e44ad" style="background-color: #8e44ad; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#f39c12" style="background-color: #f39c12; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#ffffff" style="background-color: #ffffff; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                                <div class="color-code" data-color="#000000" style="background-color: #000000; width:50px; height:50px; border:0.5px solid #f3f3f3; border-radius: 4rem;"></div>
+                            </div>
+                            <div>
+                                <button id="reset" style="display: none;">←</button>
+                                <!-- <button id="save">Save</button> -->
+                                <button class="primary-btn" type="button" id="save" data-toggle="modal" data-target="#myModal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </div>
 
         <!--Prize Section-->
@@ -235,6 +289,6 @@
     <!-- Script for the pages-->
 
     <script src="./script/script1.js"></script>
-
+    
 </body>
 </html>
